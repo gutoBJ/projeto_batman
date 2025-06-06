@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+} 
+
+body {
+    min-height: 100vh;
+    background-color: rgb(32, 32, 32);
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    margin-bottom: 50px;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.div-lista {
+    height: 100%;
+    transition: .8s;
+}
+
+.div-lista:hover {
+    border-bottom: 1px solid rgb(181, 44, 44);
+}
+
+.lista {
+    font-size: 19px;
+    color: aliceblue;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    cursor: pointer;
+    transition: .8s;
+}
+
+.lista:hover {
+    color: rgb(181, 44, 44);
+}
+
+.selecionado {
+    color: rgb(181, 44, 44);
+}
+
+.div-selecionado {
+    border-bottom: 1px solid rgb(181, 44, 44);
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+}
+
+.corpo {
+    width: 100%;
+    min-height: 200vh;
+    display: flex;
+    justify-content: center;
+}
+
+.sessao-fotos {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: repeat(4, 35vh);
+    gap: 30px;
+    margin-top: 150px;
+}
+
+.alinhar-fotos {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.containers {
+    width: 45%;
+    height: 100%;
+    background-color: rgb(75, 75, 75);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.containers:hover {
+    transform: scale(1.01);
+    box-shadow: 0px 0px 10px 0px red;
+}
+
+.foto1 {
+    background-image: url('https://epipoca.com.br/wp-content/uploads/2022/03/cena-de-batman2-06032022-1200x675.jpg');
+}
+
+.foto2 {
+    background-image: url('https://cdn.ome.lt/nQvL7VGZze-eWKVIIh4QSBhSKuM=/1200x630/smart/extras/conteudos/the-batman-tem-cena-pos-creditos.jpg');
+}
+
+.foto3 {
+    background-image: url('https://t.ctcdn.com.br/FzhgNtSfy2NA4KqmTg-xMIYkXqI=/512x288/smart/filters:format(webp)/i565956.jpeg');
+}
+
+.foto4 {
+    background-image: url('https://hollywoodforevertv.com.br/media/_versions/batman-diretor-revela-bastidores-da-atuacao-de-robert-pattinson_widelg.png');
+}
+
+.foto5 {
+    background-image: url('https://culturarevista.files.wordpress.com/2022/02/the-batman-2022-trailer-2-screenshots-48.jpg');
+}
+
+.foto6 {
+    background-image: url('https://pbs.twimg.com/media/FtEOWdvX0AAvZ-I?format=jpg&name=4096x4096');
+}
+
+.foto7 {
+    background-image: url('https://www.cinemaescrito.com/wp-content/uploads/2022/03/the-batman-910x515.jpg');
+}
+
+.foto8 {
+    background-image: url('https://cinemacao.com/wp-content/uploads/2022/03/batman-2-1130x590.jpg');
+}
+
+.foto9 {
+    background-image: url('https://onlineseries.com.br/wp-content/uploads/2021/10/The-Batman-filme.jpg');
+}
+
+.foto10 {
+    background-image: url('https://www.nit.pt/wp-content/uploads/2022/03/e82f46c748714f40b511dcf682d1ed24-754x394.jpg');
+}
+
+.foto11 {
+    background-image: url('https://pt.jugomobile.com/wp-content/uploads/2022/03/The-Batman-esta-no-HBO-Max-ou-Netflix-Quando-The.jpg');
+}
+
+.foto12 {
+    background-image: url('https://d2d7ho1ae66ldi.cloudfront.net/ArquivoNoticias/29e183d3-73ac-11ec-aa6e-9587410378a2/batman-censura.png');
+}
+
+footer {
+    width: 100%;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    color: #fff;
+    position: absolute;
+    bottom: -100%;
+}
+
+.alinhar-span {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-navigation {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width: 1000px) {
+    .footer-navigation {
+        display: block;
+    }
+
+    .footer-list {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    footer {
+        position: relative;
+        top: 420vh;
+    }
+
+    .sessao-fotos {
+        grid-template-rows: repeat(12, 50%);
+        gap: 100px;
+    }
+
+    .alinhar-fotos {
+        display: grid;
+        grid-template-columns: 90%;
+        gap: 100px;
+    }
+
+    .containers {
+        width: 100%;
+        height: 100%;
+    }
+}

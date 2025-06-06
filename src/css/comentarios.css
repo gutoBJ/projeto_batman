@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+} 
+
+body {
+    background-color: rgb(32, 32, 32);
+    max-height: 100vh;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.div-lista {
+    height: 100%;
+    transition: .8s;
+}
+
+.div-lista:hover {
+    border-bottom: 1px solid rgb(181, 44, 44);
+}
+
+.lista {
+    font-size: 19px;
+    color: aliceblue;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    cursor: pointer;
+    transition: .8s;
+}
+
+.lista:hover {
+    color: rgb(181, 44, 44);
+}
+
+.selecionado {
+    color: rgb(181, 44, 44);
+}
+
+.div-selecionado {
+    border-bottom: 1px solid rgb(181, 44, 44);
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+}
+
+.alinhar-container {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.container-comente {
+    width: 350px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(86, 86, 86);
+    border-radius: 5px;
+    box-shadow: -.5px -.5px 10px 0px rgb(0, 0, 0);
+}
+
+.textarea {
+    width: 80%;
+    min-width: 80%;
+    max-width: 80%;
+    height: 80px;
+    min-height: 80px;
+    max-height: 80px;
+    resize: none;
+}
+
+.alinhar-estrelas {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.star {
+    cursor: pointer;
+    background-image: url('https://img.icons8.com/?size=512&id=19295&format=png');
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    margin-right: 5px;
+}
+
+.star:hover {
+    background-image: url('https://img.icons8.com/?size=512&id=8ggStxqyboK5&format=png');
+}
+
+.botao-enviar {
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: rgb(214, 0, 0);
+}
+
+.botao-enviar:hover {
+    background-color: rgb(180, 0, 0);
+}
+
+.alinhar-coments {
+    width: 450px;
+    height: 300px;
+    background-color: rgb(86, 86, 86);
+    border-radius: 5px;
+    margin-left: 60px;
+    box-shadow: -.5px -.5px 10px 0px rgb(0, 0, 0);
+    padding: 10px;
+    overflow-y: scroll;
+}
+
+.alinhar-titulo {
+    width: 100%;
+    height: 50px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.container-coments {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: repeat(6, 125px);
+    row-gap: 20px;
+}
+
+.comentarios {
+    width: 100%;
+    height: 100%;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    background-color: black;
+    color: #fff;
+    border-radius: 15px;
+    box-shadow: -.5px -.5px 10px 0px rgba(0, 0, 0, 0.504);
+
+}
+
+.alinhar-perfil {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.alinhar-perfil2 {
+    display: flex;
+    align-items: center;
+}
+
+.perfil {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 50%;
+    box-shadow: inset -.5px -.5px 10px 0px rgba(0, 0, 0, 0.504);
+}
+
+.alinhar-estrelas2 {
+    display: flex;
+}
+
+.star2 {
+    width: 30px;
+    height: 30px;
+    background-image: url('https://img.icons8.com/?size=512&id=8ggStxqyboK5&format=png');
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.alinhar-texto {
+    padding: 10px;
+    font-size: 14px;
+}
+
+.alinhar-rodape {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+footer {
+    width: 90%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    margin-top: 30px;
+    border-top: 3px solid rgba(255, 255, 255, 0.584);
+    color: #fff;
+    padding-top: 100px;                                                        
+}
+
+.alinhar-logo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0px;
+}
+
+.alinhar-span {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-navigation {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width: 857px) {
+    header {
+        position: fixed;
+        top: 0;
+    }
+
+    .footer-navigation {
+        display: block;
+    }
+
+    .footer-list {
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    footer {
+        padding-top: 200px;
+    }
+
+    .alinhar-logo {
+        position: initial;
+    }
+
+    .alinhar-div-coments {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .alinhar-container {
+        flex-direction: column;
+    }
+
+    .container-comente {
+        margin-bottom: 30px;
+        margin-top: 150px;
+
+    }
+
+    .alinhar-coments {
+        margin-bottom: 30px;
+        position: relative;
+        right: 30px;
+    }
+
+}

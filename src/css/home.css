@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+} 
+
+body {
+    background-color: black;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.div-lista {
+    height: 100%;
+    transition: .8s;
+}
+
+.div-lista:hover {
+    border-bottom: 1px solid rgb(181, 44, 44);
+}
+
+.lista {
+    font-size: 18px;
+    color: aliceblue;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    cursor: pointer;
+    transition: .8s;
+}
+
+.lista:hover {
+    color: rgb(181, 44, 44);
+}
+
+.selecionado {
+    color: rgb(181, 44, 44);
+}
+
+.div-selecionado {
+    border-bottom: 1px solid rgb(181, 44, 44);
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+}
+
+#banner {
+    background-image: url('https://pbs.twimg.com/media/FBwJWeQXIAItfyH.jpg:large');
+    width: 100%;
+    height: 600px;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+#trailer-container {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.trailer {
+    width: 50%;
+}
+
+#sinopse {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+
+.description {
+    color: #fff;
+    font-size: 19px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    width: 70%;
+}
+
+.button {
+    width: 280px;
+    height: 60px;
+    background-color: rgb(181, 44, 44);
+    transition: .8s;
+    cursor: pointer;
+    font-size: 18px;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 8px 10px;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+.button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.actor-cards-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.cards-content {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+.card {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: #fff;
+    font-size: 17px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.banner-1 {
+    background-image: url('https://noticiasdatv.uol.com.br/media/_versions/artigos_2021/batman-robert-pattinson-foto-divulgacao-warner-bros_fixed_large.jpg');
+}
+
+.banner-1:active {
+    background-image: url('https://aquitemfofoca.com.br/wp-content/uploads/2023/05/Robert-Pattinson-scaled.jpeg');
+}
+
+.banner-2 {
+    background-image: url('https://pbs.twimg.com/media/FMO83fmWYAMYttY?format=jpg&name=900x900');
+}
+
+.banner-2:active {
+    background-image: url('https://cdn.britannica.com/88/239188-050-77C8D32C/American-actress-Zoe-Kravitz-2020.jpg');
+}
+
+.banner-3 {
+    background-image: url('https://brobible.com/wp-content/uploads/2020/02/jeffrey-wright.jpeg?quality=90&w=650');
+}
+
+.banner-3:active {
+    background-image: url('https://static.independent.co.uk/2022/02/23/13/Jeffery%20Wright%20-%20Getty.jpg?quality=75&width=1200&auto=webp');
+}
+
+footer {
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-top: 0.5px solid #fff;
+}
+
+span {
+    color: #fff;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.footer-navigation {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width: 768px) {
+    .footer-navigation {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+
+    #banner {
+        background-position: 40%;
+    }
+
+    #trailer-container {
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+    }
+    .trailer {
+        width: 100%;
+        margin-left: 35px;
+        margin-top: 100px;
+    }
+
+    #sinopse {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .description {
+        width: 100%;
+    }
+
+    .button {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .cards-content {
+        grid-template-columns: 1fr;
+        margin-top: 150px;
+    }
+
+    footer {
+        padding-top: 100px;
+        padding-bottom: 20px;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    span {
+        margin-bottom: 10px;
+    }
+
+    .div-lista {
+        margin-bottom: 10px;
+    }
+
+    .div-lista:hover {
+        border-bottom: 1px solid rgb(181, 44, 44);
+    }
+    
+    .lista {
+        font-size: 18px;
+        color: aliceblue;
+        font-family: 'Kdam Thmor Pro', sans-serif;
+        cursor: pointer;
+        transition: .8s;
+    }
+    
+    .lista:hover {
+        color: rgb(181, 44, 44);
+    }
+    
+    .selecionado {
+        color: rgb(181, 44, 44);
+    }
+    
+    .div-selecionado {
+        border-bottom: 1px solid rgb(181, 44, 44);
+    }
+}
