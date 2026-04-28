@@ -36,6 +36,7 @@ ul {
 .div-lista {
     height: 100%;
     transition: .8s;
+    border-bottom: 1px solid transparent;
 }
 
 .div-lista:hover {
